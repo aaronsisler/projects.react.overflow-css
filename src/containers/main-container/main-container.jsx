@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./main-container.scss";
+import StickyPanel from "../../components/sticky-panel";
+import FloatingPanel from "../../components/floating-panel";
 
 const MoreContainer = () => (
   <div className="main-container">
@@ -8,26 +10,26 @@ const MoreContainer = () => (
       <div className="side-by-side-wrapper">
         <div className="side-by-side">
           <div className="sticky">
-            <TableSection name="Sticky" />
+            <StickyPanel />
           </div>
           <div className="floating">
             <div className="content">
-              <TableSection name="First" />
+              <FloatingPanel />
             </div>
             <div className="content">
-              <TableSection name="Second" />
+              <FloatingPanel />
             </div>
             <div className="content">
-              <TableSection name="Third" />
+              <FloatingPanel />
             </div>
             <div className="content">
-              <TableSection name="Fourth" />
+              <FloatingPanel />
             </div>
             <div className="content">
-              <TableSection name="Fifth" />
+              <FloatingPanel />
             </div>
             <div className="content">
-              <TableSection name="Sixth" />
+              <FloatingPanel />
             </div>
           </div>
         </div>
@@ -37,27 +39,3 @@ const MoreContainer = () => (
 );
 
 export default MoreContainer;
-
-const TableSection = ({ name }) => (
-  <table>
-    <tbody>
-      <tr>
-        <th colSpan="4">{name}</th>
-      </tr>
-      {[...Array(10).keys()].map((item, index) => (
-        <tr key={index}>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-        </tr>
-      ))}
-      <tr>
-        <td>Last</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-      </tr>
-    </tbody>
-  </table>
-);
