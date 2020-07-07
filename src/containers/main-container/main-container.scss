@@ -1,0 +1,79 @@
+@import "../../styles/variables.scss";
+
+//Small screens - MOBILE
+@media only screen {
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 300px;
+    padding: 25px;
+    overflow: hidden;
+    background-color: red;
+  }
+  .content-container {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: blue;
+  }
+  .side-by-side-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex: 1 1 auto;
+    overflow: scroll;
+    background-color: chocolate;
+  }
+  .side-by-side {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: coral;
+  }
+  .sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 150px;
+    height: 100%;
+    background-color: yellow;
+  }
+  .floating {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    background-color: green;
+  }
+  .content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 200px;
+    background-color: turquoise;
+    border: 1px solid pink;
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}
