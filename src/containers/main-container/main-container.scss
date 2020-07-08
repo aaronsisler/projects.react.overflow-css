@@ -9,8 +9,8 @@
   .main-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 300px;
+    width: 65%;
+    height: 400px;
     padding: 25px;
     overflow: hidden;
     background-color: red;
@@ -50,7 +50,7 @@
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    width: 150px;
+    width: fit-content;
     height: 100%;
     background-color: yellow;
   }

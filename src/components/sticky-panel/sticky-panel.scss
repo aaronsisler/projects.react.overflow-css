@@ -4,7 +4,10 @@
 @media only screen {
   .sticky-panel {
     width: 200px;
-    &__caption {
+    &__header {
+      position: sticky;
+      top: 0;
+      left: 0;
       display: flex;
       justify-content: center;
       padding: 3px;

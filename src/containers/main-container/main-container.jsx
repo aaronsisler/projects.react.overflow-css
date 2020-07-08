@@ -4,7 +4,7 @@ import "./main-container.scss";
 import StickyPanel from "../../components/sticky-panel";
 import FloatingPanel from "../../components/floating-panel";
 
-const MoreContainer = () => (
+const MainContainer = () => (
   <div className="main-container">
     <div className="content-container">
       <div className="side-by-side-wrapper">
@@ -38,4 +38,4 @@ const MoreContainer = () => (
   </div>
 );
 
-export default MoreContainer;
+export default MainContainer;

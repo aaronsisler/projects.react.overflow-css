@@ -4,9 +4,15 @@ import "./sticky-panel.scss";
 
 const StickyPanel = () => (
   <div className="sticky-panel">
-    <caption className="sticky-panel__caption">Sticky</caption>
+    <div className="sticky-panel__header">Sticky</div>
     <table className="sticky-panel__table">
       <tbody>
+        <tr className="totals-row">
+          <td>Totals</td>
+          <td>Row</td>
+          <td>Is</td>
+          <td>Here</td>
+        </tr>
         {[...Array(10).keys()].map(index => (
           <tr key={index}>
             <td>Ticker</td>

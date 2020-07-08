@@ -2,6 +2,21 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .floating-panel {
+    width: 200px;
+    &__header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      padding: 3px;
+      color: #727373;
+      font-weight: bold;
+      text-align: center;
+      background-color: #f5f7f7;
+    }
+  }
 }
 
 //Medium screens - TABLET
