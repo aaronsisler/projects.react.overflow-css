@@ -8,13 +8,21 @@
       position: sticky;
       top: 0;
       left: 0;
+      z-index: 2;
+      &-title {
+        display: flex;
+        justify-content: center;
+        padding: 3px;
+        color: #727373;
+        font-weight: bold;
+        text-align: center;
+        background-color: #f5f7f7;
+      }
+    }
+    &__totals-table {
+      z-index: 2;
       display: flex;
-      justify-content: center;
-      padding: 3px;
-      color: #727373;
-      font-weight: bold;
-      text-align: center;
-      background-color: #f5f7f7;
+      background-color: white;
     }
   }
 }
